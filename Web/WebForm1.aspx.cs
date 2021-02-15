@@ -128,9 +128,9 @@ namespace Web
         protected void MajBdd_Click(object sender, EventArgs e)
         {
             string connetionString;
-            SqlConnection cnn;
+                   SqlConnection cnn;
 
-            connetionString = @"Server=WASEF-PC\SQLEXPRESS;Trusted_Connection=True;Database=demodb ;User ID=Mylogin;Password=123";
+     connetionString = @"Server=WASEF-PC\SQLEXPRESS;Trusted_Connection=True;Database=demodb ;User ID=Mylogin;Password=123";
 
             cnn = new SqlConnection(connetionString);
             cnn.Open();
@@ -190,5 +190,7 @@ namespace Web
             Button1.Visible = false;
 
         }
+
+       
     }
 }

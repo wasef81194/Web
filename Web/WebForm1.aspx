@@ -29,11 +29,24 @@
         <p>
             <asp:Button ID="Button1" runat="server" Text="Envoyer" OnClick="Button1_Click" />
         </p>
+        <p>
+            <asp:Label ID="TutorialID" runat="server" Text="Tutorial ID"></asp:Label>
+            <asp:ListBox ID="ListBox1" runat="server" DataSourceID="SqlDataSource1" DataTextField="TutorialID" DataValueField="TutorialID"></asp:ListBox>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:demodbConnection %>" SelectCommand="SELECT * FROM [demotb]"></asp:SqlDataSource>
+        </p>
+        <p>
+            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            <asp:ListBox ID="ListBox2" runat="server" DataSourceID="SqlDataSource1" DataTextField="TutorialName" DataValueField="TutorialName" OnSelectedIndexChanged="ListBox2_SelectedIndexChanged"></asp:ListBox>
+        </p>
+        <p>
         <asp:Button ID="SeeBdd" runat="server" OnClick="SeeBdd_Click" Text="Afficher les élément dans la base de données" />
+        </p>
         <p>
             <asp:Button ID="AddInBdd" runat="server" OnClick="AddInBdd_Click" Text="Ajouter un élément à la base de donner" Width="296px" />
         </p>
+        <p>
         <asp:Button ID="MajBdd" runat="server" OnClick="MajBdd_Click" Text="Mise à jour de la base de données" />
+        </p>
         <p>
             <asp:Button ID="DeleteInBdd" runat="server" OnClick="DeleteInBdd_Click" Text="Supprimer l'enregistrement de la base de données" />
         </p>
