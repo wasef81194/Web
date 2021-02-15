@@ -35,8 +35,8 @@
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:demodbConnection %>" SelectCommand="SELECT * FROM [demotb]"></asp:SqlDataSource>
         </p>
         <p>
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-            <asp:ListBox ID="ListBox2" runat="server" DataSourceID="SqlDataSource1" DataTextField="TutorialName" DataValueField="TutorialName" OnSelectedIndexChanged="ListBox2_SelectedIndexChanged"></asp:ListBox>
+            <asp:Label ID="TutorialName" runat="server" Text="Tutorial Name"></asp:Label>
+            <asp:ListBox ID="ListBox2" runat="server" DataSourceID="SqlDataSource1" DataTextField="TutorialName" DataValueField="TutorialName"></asp:ListBox>
         </p>
         <p>
         <asp:Button ID="SeeBdd" runat="server" OnClick="SeeBdd_Click" Text="Afficher les élément dans la base de données" />
